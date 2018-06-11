@@ -1,0 +1,169 @@
+/* Chris Richards 5/25/18 - CSS file for ABCCorpSchool.net*/
+/* Provides bakground color for website */
+body {
+    background-color: lightblue;
+    margin: 0;
+}
+/* provides heading color, margin, padding, font size, font weight, font type */
+h1 {
+    color: black;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+/* provides heading 2 color, margin, padding, font size, font weight, font type */
+h2 {
+    color: black;
+    margin-left: 0px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+}
+/* provides heading 3 color, margin, padding, font size, font weight, font type */
+h3 {
+    color: red;
+    margin-left: 0px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+/* provides paragraph color, margin, padding, font size, font weight, font type */
+p {
+    color: black;
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+/* provides border around footer along with color, margin, border line weight */
+footer {
+    clear:left;
+    background-color: lightgray;
+    border: 5px solid black;
+    margin: 0px;
+    width: 100%;
+}
+
+/* unvisited link color */
+a:link {
+    color: black;
+}
+
+/* visited link color */
+a:visited {
+    color: red;
+}
+
+/* provides highlights for hover over*/
+li a:hover:not(.active) {
+    background-color: darkslategray;
+    color: orange;
+}
+/* provides color, margin, padding, overflow, background color, position, and location */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* sets up the navigation for the left side */
+li {
+    float: Left;
+}
+/* displays box around hovering */
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+   
+}
+/* table font and width*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+/*table boder and padding*/
+td, th {
+    border: 3px solid black;
+    text-align: left;
+    padding: 8px;
+}
+/*alternate coloring of rows within table*/
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+ /* responsive layout break point */
+@media (max-width: 600px){
+
+	#contentwrapper{
+	float: none;
+	}
+	
+	#leftcolumn{
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	}
+	
+	#contentcolumn{
+	margin-left: 0;
+	}
+}
+/*background color and height*/
+#topsection{
+background: lightyellow;
+height: 100px; /*Height of top section*/
+}
+/*background color, margin, padding*/
+#topsection h1{
+margin: 0;
+padding-top: 40px;
+background: lightblue;    
+}
+
+/*sets left side and width*/
+#contentwrapper{
+float: left;
+width: 100%;
+}
+/*font, background color, padding, margin*/
+#contentcolumn{
+margin-left: 300px; /*Set left margin to LeftColumnWidth*/
+background: lightblue;
+font-size: 20px;
+padding-top: 20px;    
+}
+/*font, background color, padding, margin*/
+#leftcolumn{
+float: left;
+width: 300px; /*Width of left column*/
+margin-left: -100%;
+background: lightyellow;
+font-size: 20px;
+padding-top: 20px;     
+}
+/*font, background color, padding, margin*/
+#footer{
+clear: left;
+width: 100%;
+background: grey;
+color: white;
+text-align: center;
+padding: 10px 0;
+}
+/*footer color of font*/
+#footer a{
+color: white;
+}
